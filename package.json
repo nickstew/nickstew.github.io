@@ -1,30 +1,34 @@
 {
   "name": "nickstew.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "license": "MIT",
+  "description": "Personal website for Nick Stewart",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickstew/nickstew.github.io.git"
   },
+  "bugs": {
+    "url": "https://github.com/nickstew/nickstew.github.io/"
+  },
+  "homepage": "https://github.com/nickstew/nickstew.github.io#readme",
   "author": {
     "name": "Nick Stewart",
     "email": "nick.stewart.programmer@gmail.com",
     "url": "http://nickstew.github.io/"
   },
-  "contributors": [
-    {
-      "name": "Nick Stewart",
-      "email": "nick.stewart.programmer@gmail.com",
-      "url": "http://nickstew.github.io/"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nickstew/nickstew.github.io/issues"
+  "devDependencies": {
+    "react-scripts": "0.8.4"
   },
-  "homepage": "https://github.com/nickstew/nickstew.github.io#readme"
+  "dependencies": {
+    "github-calendar": "^1.1.10",
+    "moment": "^2.17.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
