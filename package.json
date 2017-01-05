@@ -1,0 +1,30 @@
+{
+  "name": "nickstew.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickstew/nickstew.github.io.git"
+  },
+  "author": {
+    "name": "Nick Stewart",
+    "email": "nick.stewart.programmer@gmail.com",
+    "url": "http://nickstew.github.io/"
+  },
+  "contributors": [
+    {
+      "name": "Nick Stewart",
+      "email": "nick.stewart.programmer@gmail.com",
+      "url": "http://nickstew.github.io/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickstew/nickstew.github.io/issues"
+  },
+  "homepage": "https://github.com/nickstew/nickstew.github.io#readme"
+}
