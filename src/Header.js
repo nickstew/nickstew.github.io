@@ -7,7 +7,13 @@ class Header extends Component {
     return (
       <header className="header">
           <div className="container">
-              <img className="profile-image img-responsive pull-left" width="180" height="180" src={resume.basics.picture} alt={resume.basics.name} />
+              <img className="profile-image img-responsive pull-left"
+                   style={{
+                     borderRadius: '180px'
+                   }}
+                   width="180" height="180"
+                   src={resume.basics.picture} alt={resume.basics.name}
+              />
               <div className="profile-content pull-left">
                   <h1 className="name">{resume.basics.name}</h1>
                   <h2 className="desc">{resume.basics.label}</h2>
