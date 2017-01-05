@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import resume from './resume.json';
-import OpenSprintsElectronRaceScreenMockup from './OpenSprintsElectron-RaceScreenMockup.png';
+
+const featureProjectImage = '/assets/images/projects/project-featured.jpeg';
 
 const secondaryProjectWithImage = (publication) => (
   <div className="item row">
@@ -55,7 +56,7 @@ class MainProjects extends Component {
               </p>
               <div className="featured-image">
                 <a href={resume.publications[0].website} target="_blank">
-                  <img className="img-responsive project-image" src={OpenSprintsElectronRaceScreenMockup} alt="OpenSprints Electron Race Screen" />
+                  <img className="img-responsive project-image" src={featureProjectImage} alt="OpenSprints Electron Race Screen" />
                 </a>
                 <div className="ribbon">
                   <div className="text">New</div>
