@@ -64,7 +64,7 @@ class MainProjects extends Component {
               </div>
               <div className="desc text-left">
                 <p>
-                  OpenSprints Electron allows anyone to run a bycycle roller race event for fun or profit!
+                  OpenSprints Electron allows anyone to run a bicycle roller race event for fun or profit!
                 </p>
                 <p>Features include:</p>
                 <ul>
