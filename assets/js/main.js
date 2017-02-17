@@ -19,4 +19,14 @@ jQuery(document).ready(function($) {
 
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
+
+    /* GA Custom Tracking */
+    const dimensions = {
+        CLIENT_ID: 'dimension1'
+    }
+
+    ga(function(tracker) {
+        var clientId = tracker.get('clientId');
+        tracker.set(dimensions.CLIENT_ID, clientId);
+    });
 });
