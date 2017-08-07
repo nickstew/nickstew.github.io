@@ -10,21 +10,21 @@
   "bugs": {
     "url": "https://github.com/nickstew/nickstew.github.io/"
   },
-  "homepage": "http://nickstew.github.io",
+  "homepage": "https://nickstew.github.io",
   "author": {
     "name": "Nick Stewart",
     "email": "nick.stewart.programmer@gmail.com",
-    "url": "http://nickstew.github.io/"
+    "url": "https://nickstew.github.io"
   },
   "devDependencies": {
-    "react-scripts": "0.8.4"
+    "gh-pages": "^1.0.0",
+    "react-scripts": "1.0.10"
   },
   "dependencies": {
-    "gh-pages": "^0.12.0",
-    "github-calendar": "^1.1.10",
-    "moment": "^2.17.1",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "github-calendar": "^1.1.12",
+    "moment": "^2.18.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
