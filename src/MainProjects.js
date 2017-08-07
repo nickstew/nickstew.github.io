@@ -8,6 +8,7 @@ const secondaryProjectWithImage = (publication) => (
     <a
       className="col-md-4 col-sm-4 col-xs-12"
       href={publication.website}
+      rel="noopener noreferrer"
       target="_blank">
       <img
         className="img-responsive project-image" src="assets/images/projects/project-5.png"
@@ -18,6 +19,7 @@ const secondaryProjectWithImage = (publication) => (
       <h3 className="title">
         <a
           href={publication.website}
+          rel="noopener noreferrer"
           target="_blank">
           {publication.name}
         </a>
@@ -29,6 +31,7 @@ const secondaryProjectWithImage = (publication) => (
         <a
           className="more-link"
           href={publication.website}
+          rel="noopener noreferrer"
           target="_blank">
           <i className="fa fa-external-link"></i> Find out more
         </a>
@@ -47,7 +50,7 @@ class MainProjects extends Component {
           <div className="content">
             <div className="item featured text-center">
               <h3 className="title">
-                <a href={resume.publications[0].website} target="_blank">
+                <a href={resume.publications[0].website} rel="noopener noreferrer" target="_blank">
                   {resume.publications[0].name}
                 </a>
               </h3>
@@ -55,7 +58,7 @@ class MainProjects extends Component {
                 {resume.publications[0].summary}
               </p>
               <div className="featured-image">
-                <a href={resume.publications[0].website} target="_blank">
+                <a href={resume.publications[0].website} rel="noopener noreferrer" target="_blank">
                   <img className="img-responsive project-image" src={featureProjectImage} alt="OpenSprints Electron Race Screen" />
                 </a>
                 <div className="ribbon">
@@ -81,6 +84,7 @@ class MainProjects extends Component {
               <a
                 className="btn btn-cta-secondary"
                 href="https://github.com/opensprints/opensprints-electron"
+                rel="noopener noreferrer"
                 target="_blank">
                 <i className="fa fa-thumbs-o-up"></i> Back my project
               </a>
