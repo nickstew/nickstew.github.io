@@ -3,7 +3,8 @@ import resume from './resume.json';
 
 class SkillSet extends Component {
   render() {
-    if (!resume.skills || resume.skills.length < 1) {
+    if (!resume.skills || resume.skills.length < 1 ||
+      !resume.basics.profiles || resume.basics.profiles.length < 2) {
       console.log('add more skills for this section to show');
       return null;
     }

@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import find from 'lodash/find';
-
 import GitHubCalendar from 'github-calendar';
+import Resume from './resume.json';
 require('github-calendar/dist/github-calendar.css');
 
-import Resume from './resume.json';
 
 class Github extends Component {
   componentDidMount() {
-    var githubProfile = find(Resume.basics.profiles, profile => profile.network.toLowerCase() === 'github')
+    var githubProfile = find(Resume.basics.profiles,
+        profile => profile.network.toLowerCase() === 'github')
+
     this.setState({
       github: githubProfile
     })
@@ -18,6 +19,7 @@ class Github extends Component {
       console.log('no GitHub profile found')
     }
   }
+
   render() {
     return (
       <section className="github section">
