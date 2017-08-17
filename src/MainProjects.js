@@ -43,6 +43,9 @@ secondaryProjectWithImage({});
 
 class MainProjects extends Component {
   render() {
+    if (resume.publications.length === 0) {
+      return null;
+    }
     return (
       <section className="latest section">
         <div className="section-inner">

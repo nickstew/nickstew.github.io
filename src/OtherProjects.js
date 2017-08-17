@@ -17,6 +17,9 @@ const openSourceProject = (publication) => (
 
 class OtherProjects extends Component {
   render() {
+    if (resume.publications.length <= 1) {
+      return null;
+    }
     return (
       <section className="projects section">
         <div className="section-inner">
