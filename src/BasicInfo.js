@@ -4,6 +4,13 @@ import resume from './resume.json';
 
 class BasicInfo extends Component {
   render() {
+    if (!resume.basics ||
+      !resume.basics.location ||
+      !resume.basics.profiles ||
+      resume.basics.profiles.length < 1) {
+      console.log('basics, basics.location, & basics.profiles are all required for the basic info component');
+      return null;
+    }
     const emailProfile = resume.basics.profiles[0];
     const location = resume.basics.location;
     return (

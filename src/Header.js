@@ -4,6 +4,10 @@ import resume from './resume.json';
 
 class Header extends Component {
   render() {
+    if (!resume.basics || !resume.basics.profiles || resume.basics.profiles.length <=  2) {
+      console.log('basics and profiles are currently required for the header section');
+      return null;
+    }
     return (
       <header className="header">
           <div className="container">

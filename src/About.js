@@ -3,6 +3,10 @@ import resume from './resume.json';
 
 class About extends Component {
   render() {
+    if (!resume.basics) {
+      console.log('resume.basics is required for the about component');
+      return null;
+    }
     return (
       <section className="about section">
         <div className="section-inner">
