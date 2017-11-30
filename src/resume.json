@@ -37,11 +37,11 @@
             "position": "Software Developer",
             "website": "https://www.rakutenmarketing.com/",
             "startDate": "2015-03-04",
-            "endDate": "Present",
+            "endDate": "2017-09-15",
             "summary": "Midvale, Utah",
             "highlights": [
                 "Maintained and added features to an internal, dynamic, ad builder web application.  It was built using Angular.js.",
-                "Also built an analytics website for clients and employees to view and compare effectiveness of marketing campaigns over time.  The website was built using Mithril.js and HighCharts.js."
+                "Also built an analytics website for clients and employees to view and compare effectiveness of marketing campaigns over time.  The website was built using Mithril.js, HighCharts.js, and was rebuilt using React."
             ]
         },
         {
