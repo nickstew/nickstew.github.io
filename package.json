@@ -17,15 +17,15 @@
     "url": "https://nickstew.github.io"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0",
-    "lodash": "^4.17.4",
-    "react-scripts": "^1.0.17"
+    "gh-pages": "1.1.0",
+    "lodash": "4.17.4",
+    "react-scripts": "1.0.17"
   },
   "dependencies": {
-    "github-calendar": "^1.2.0",
-    "moment": "^2.19.3",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2"
+    "github-calendar": "1.2.0",
+    "moment": "2.19.3",
+    "react": "15.6.2",
+    "react-dom": "15.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
