@@ -5,7 +5,6 @@ import MainProjects from './MainProjects';
 import OtherProjects from './OtherProjects';
 import WorkExperience from './WorkExperience';
 import Github from './Github';
-import Footer from './Footer';
 
 import BasicInfo from './BasicInfo';
 import SkillSet from './SkillSet';
@@ -32,7 +31,6 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }
