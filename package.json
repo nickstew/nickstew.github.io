@@ -36,4 +36,3 @@
     "deploy": "gh-pages -d build -b master --dotfiles"
   }
 }
-
