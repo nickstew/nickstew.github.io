@@ -1,4 +1,4 @@
-## nickstew.github.io
+## nickstew.github.io [![Build Status](https://travis-ci.org/nickstew/nickstew.github.io.svg?branch=development)](https://travis-ci.org/nickstew/nickstew.github.io)
 
 **Demo:** http://nickstew.github.io/
 
