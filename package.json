@@ -32,7 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && cp {package.json,.gitignore,README.md,package-lock.json} build/",
+    "predeploy": "npm run build && cp -t build/ package.json .gitignore README.md package-lock.json",
     "deploy": "gh-pages -d build -b master --dotfiles"
   }
 }
