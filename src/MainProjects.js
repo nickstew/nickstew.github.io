@@ -89,7 +89,7 @@ class MainProjects extends Component {
                 href="https://github.com/opensprints/opensprints-electron"
                 rel="noopener noreferrer"
                 target="_blank">
-                <i className="fa fa-thumbs-o-up"></i> Back my project
+                  View Source Code on Github <i className="fa fa-chevron-right"></i>
               </a>
             </div>
 
