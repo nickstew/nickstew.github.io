@@ -1,0 +1,20 @@
+{
+  "short_name": "Nick Stewart",
+  "name": "Nick Stewart @ NickStew Software",
+  "icons": [
+    {
+      "src": "/assets/images/app_icon.jpg",
+      "type": "image/jpg",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/assets/images/app_icon.jpg",
+      "type": "image/jpg",
+      "sizes": "144x144"
+    }
+  ],
+  "background_color": "#DAE3E7",
+  "theme_color": "#DAE3E7",
+  "display": "browser",
+  "start_url": "index.html?utm_source=homescreen"
+}
