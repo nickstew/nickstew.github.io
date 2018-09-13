@@ -20,8 +20,8 @@ class App extends Component {
             <div className="primary col-md-8 col-sm-12 col-xs-12">
               <About />
               <MainProjects />
-              <OtherProjects />
               <WorkExperience />
+              <OtherProjects />
               <Github />
             </div>
             <div className="secondary col-md-4 col-sm-12 col-xs-12">
