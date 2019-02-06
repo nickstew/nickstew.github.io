@@ -8,7 +8,7 @@ const openSourceProject = (publication) => (
     </h3>
     <p className="summary">{publication.summary}</p>
     <p>
-      <a className="more-link" href={publication.website} target="_blank">
+      <a className="more-link" href={publication.website} rel="noopener noreferrer" target="_blank">
         <i className="fa fa-external-link"></i> Find out more
       </a>
     </p>
