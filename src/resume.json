@@ -33,6 +33,19 @@
     },
     "work": [
         {
+            "company": "Fluent Home",
+            "position": "Software Developer",
+            "website": "https://www.fluenthome.com/",
+            "startDate": "2019-11-01",
+            "endDate": "2017-07-01",
+            "summary": "Lehi, Utah",
+            "highlights": [
+                "Using React, I built a \"new client equipment\" document generator for our inside sales team.",
+                "Fixed and updated our analytics site (using React) that gives high-level overview of business operations to help managers make critical decisions.",
+                "Assisted in improvements made to our mobile Sales Application using React Native."
+            ]
+        },
+        {
             "company": "Rakuten Marketing",
             "position": "Software Developer",
             "website": "https://www.rakutenmarketing.com/",
