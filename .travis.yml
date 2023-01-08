@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 16
+  - 12
 
 before_deploy:
   - rm -rf build && npm run predeploy
