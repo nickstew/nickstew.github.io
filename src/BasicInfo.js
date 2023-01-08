@@ -11,8 +11,11 @@ class BasicInfo extends Component {
       console.log('basics, basics.location, & basics.profiles are all required for the basic info component');
       return null;
     }
-    const emailProfile = resume.basics.profiles[0];
-    const location = resume.basics.location;
+    const { url: emailUrl, username: emailLabel } = resume.basics.profiles[0];
+    const { city, region } = resume.basics.location;
+    // if (window.innerWidth <= 992) {
+      // TODO: fix long email with ellipses
+    // }
     return (
       <aside className="info aside section">
         <div className="section-inner">
@@ -22,12 +25,12 @@ class BasicInfo extends Component {
               <li>
                 <i className="fa fa-map-marker"></i>
                 <span className="sr-only">Location:</span>
-                {location.city}, {location.region}
+                {city}, {region}
               </li>
               <li>
                 <i className="fa fa-envelope-o"></i>
                 <span className="sr-only">Email:</span>
-                <a href={emailProfile.url}>{emailProfile.username}</a>
+                <a href={emailUrl}>{emailLabel}</a>
               </li>
               <li>
                 <i className="fa fa-link"></i>

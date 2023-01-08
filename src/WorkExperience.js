@@ -9,15 +9,15 @@ class WorkExperience extends Component {
         <div className="section-inner">
           <h2 className="heading">Work Experience</h2>
           <div className="content">
-            {resume.work.map((work, workIndex) => (
+            {resume.work.map(({ position, website, company, startDate, endDate, highlights }, workIndex) => (
               <div key={"WorkXP-" + workIndex} className="item">
                 <h3 className="title">
-                  {work.position} -
-                  <span className="place"><a href={work.website}>{work.company}</a></span>
-                  <span className="year">({moment.utc(work.startDate).format('MMM, YYYY')} - {work.endDate === 'Present' ? 'Present' : moment.utc(work.endDate).format('MMM, YYYY')})</span>
+                  {position} -
+                  <span className="place"><a href={website}>{company}</a></span>
+                  <span className="year">({moment.utc(startDate).format('MMM, YYYY')} - {endDate === 'Present' ? 'Present' : moment.utc(endDate).format('MMM, YYYY')})</span>
                 </h3>
                 <ul>
-                  {work.highlights.map((highlight, highlightIndex) => (
+                  {highlights.map((highlight, highlightIndex) => (
                     <li key={"WorkXP-" + workIndex + "-highlight-" + highlightIndex}>
                       {highlight}
                     </li>
