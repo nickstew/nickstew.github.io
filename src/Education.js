@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import moment from 'moment';
-import resume from './resume.json';
 
-class Education extends Component {
-  render() {
-    if (!resume.education || resume.education.length < 1) {
+import * as Types from "./Types";
+
+const Education = ({
+  education,
+ }) => {
+    if (!education || education.length < 1) {
       console.log('no education listed in resume')
       return null;
     }
-    const college = resume.education[0]
+    const college = education[0]
     return (
       <aside className="education aside section">
         <div className="section-inner">
@@ -29,7 +31,9 @@ class Education extends Component {
         </div>
       </aside>
     );
-  }
+  };
+Education.propTypes = {
+  education: Types.Education,
 }
 
 export default Education;

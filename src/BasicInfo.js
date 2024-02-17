@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Basic } from "./Types";
 
-import resume from './resume.json';
-
-class BasicInfo extends Component {
-  render() {
-    if (!resume.basics ||
-      !resume.basics.location ||
-      !resume.basics.profiles ||
-      resume.basics.profiles.length < 1) {
+const BasicInfo = ({
+  basics
+}) => {
+    if (!basics ||
+      !basics.location ||
+      !basics.profiles ||
+      basics.profiles.length < 1) {
       console.log('basics, basics.location, & basics.profiles are all required for the basic info component');
       return null;
     }
-    const { url: emailUrl, username: emailLabel } = resume.basics.profiles[0];
-    const { city, region } = resume.basics.location;
+    const { url: emailUrl, username: emailLabel } = basics.profiles[0];
+    const { city, region } = basics.location;
     // if (window.innerWidth <= 992) {
       // TODO: fix long email with ellipses
     // }
@@ -35,7 +35,7 @@ class BasicInfo extends Component {
               <li>
                 <i className="fa fa-link"></i>
                 <span className="sr-only">Website:</span>
-                <a href={resume.basics.website}>{resume.basics.website}</a>
+                <a href={basics.url}>{basics.url}</a>
               </li>
             </ul>
           </div>
@@ -43,6 +43,9 @@ class BasicInfo extends Component {
       </aside>
     );
   }
-}
+
+BasicInfo.propTypes = {
+  basics: Basic,
+};
 
 export default BasicInfo;
