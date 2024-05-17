@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import find from 'lodash/find';
 import GitHubCalendar from 'github-calendar';
 import Resume from './resume.json';
-require('github-calendar/dist/github-calendar.css');
+import('github-calendar/dist/github-calendar.css');
 
 
 class Github extends Component {
   componentDidMount() {
-    var githubProfile = find(Resume.basics.profiles,
+    var githubProfile = find(Resume.basic.profiles,
         profile => profile.network.toLowerCase() === 'github')
 
     this.setState({

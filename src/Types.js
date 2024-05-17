@@ -1,10 +1,10 @@
-import { arrayOf, shape, string, } from "prop-types";
+import {arrayOf, shape, string,} from "prop-types";
 
 export const Location = {
   // To add multiple address lines, use \n. For example, 1234 Glücklichkeit Straße\nHinterhaus 5. Etage li.
   address: string.isRequired,
 
-  // Current address' postal code, format accoridng to your country
+  // Current address' postal code, format according to your country
   postalCode: string.isRequired,
 
   // The address' city
@@ -35,7 +35,7 @@ export const Basic = {
   // Current description, e.g. Web Developer
   label: string,
 
-  // URL (as per RFC 3986) to a image in JPEG or PNG format
+  // URL (as per RFC 3986) to an image in JPEG or PNG format
   image: string,
 
   // e.g. thomas@gmail.com
@@ -51,10 +51,10 @@ export const Basic = {
   summary: string,
 
   // Your current location information, sensitive
-  location: Location,
+  location: shape(Location),
 
   // Specify any number of social networks that you participate in
-  profiles: arrayOf(Profile),
+  profiles: arrayOf(shape(Profile)),
 };
 
 export const Work = {

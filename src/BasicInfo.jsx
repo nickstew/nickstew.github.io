@@ -1,17 +1,20 @@
 import React from 'react';
-import { Basic } from "./Types";
+import { shape } from "prop-types";
 
+import { Basic } from "./Types";
+import {find} from "lodash";
+
+/**
+ * Display for Basic info of Resume (City & Region of Location, First Profile's email, & website)
+ * @param basics
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const BasicInfo = ({
   basics
 }) => {
-    if (!basics ||
-      !basics.location ||
-      !basics.profiles ||
-      basics.profiles.length < 1) {
-      console.log('basics, basics.location, & basics.profiles are all required for the basic info component');
-      return null;
-    }
-    const { url: emailUrl, username: emailLabel } = basics.profiles[0];
+  const githubProfile = find(basics.profiles, p => p.network === 'GitHub');
+    const { url: emailUrl, username: emailLabel } = find(basics.profiles, p => p.network === 'Email');
     const { city, region } = basics.location;
     // if (window.innerWidth <= 992) {
       // TODO: fix long email with ellipses
@@ -19,7 +22,9 @@ const BasicInfo = ({
     return (
       <aside className="info aside section">
         <div className="section-inner">
-          <h2 className="heading sr-only">Basic Information</h2>
+          <h2 className="heading sr-only">
+            Basic Information
+          </h2>
           <div className="content">
             <ul className="list-unstyled">
               <li>
@@ -35,7 +40,7 @@ const BasicInfo = ({
               <li>
                 <i className="fa fa-link"></i>
                 <span className="sr-only">Website:</span>
-                <a href={basics.url}>{basics.url}</a>
+                <a href={githubProfile.url}>{githubProfile.url}</a>
               </li>
             </ul>
           </div>
@@ -45,7 +50,7 @@ const BasicInfo = ({
   }
 
 BasicInfo.propTypes = {
-  basics: Basic,
+  basics: shape(Basic).isRequired,
 };
 
 export default BasicInfo;

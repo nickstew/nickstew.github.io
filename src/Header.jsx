@@ -1,6 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { shape } from 'prop-types';
+import { Basic } from "./Types";
+import {first} from "lodash";
 
+/**
+ *
+ * @param basics
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const Header = ({
   basics
 }) => {
@@ -10,10 +18,6 @@ const Header = ({
     label,
     profiles,
   } = basics;
-  if (!basics || !profiles || profiles.length <=  2) {
-    console.log('basics and profiles are currently required for the header section');
-    return null;
-  }
   return (
     <header className="header">
         <div className="container">
@@ -27,16 +31,20 @@ const Header = ({
               alt={name}
             />
             <div className="profile-content pull-left">
-                <h1 className="name">{name}</h1>
-                <h2 className="desc">{label}</h2>
+                <h1 className="name">
+                  {name}
+                </h1>
+                <h2 className="desc">
+                  {label}
+                </h2>
                 <ul className="social list-inline">
                   <li>
-                    <a href={profiles[1].url}>
+                    <a href={first(profiles, p => p.network === 'LinkedIn').url}>
                       <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={profiles[2].url}>
+                    <a href={first(profiles, p => p.network === 'GitHub').url}>
                       <i className="fa fa-github-alt"></i>
                     </a>
                   </li>
@@ -44,7 +52,7 @@ const Header = ({
             </div>
             <a
               className="btn btn-cta-primary pull-right"
-              href={profiles[0].url}
+              href={first(profiles, p => p.network === 'Email').url}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -56,14 +64,7 @@ const Header = ({
 }
 
 Header.propTypes = {
-  basics: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    picture: PropTypes.string.isRequired,
-    profiles: PropTypes.arrayOf(PropTypes.shape({
-      url: PropTypes.string.isRequired,
-    }).isRequired).isRequired
-  }).isRequired
+  basics: shape(Basic).isRequired
 };
 
 export default Header;

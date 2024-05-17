@@ -1,5 +1,5 @@
 {
-    "basics": {
+    "basic": {
         "name": "Nick Stewart",
         "label": "Software Engineer",
         "picture": "https://avatars.githubusercontent.com/u/1165359",
@@ -33,7 +33,7 @@
     },
     "work": [
         {
-            "company": "Fluent Home",
+            "name": "Fluent Home",
             "position": "Software Developer",
             "website": "https://www.fluenthome.com/",
             "startDate": "2019-11-01",
@@ -46,7 +46,7 @@
             ]
         },
         {
-            "company": "Rakuten Marketing",
+            "name": "Rakuten Marketing",
             "position": "Software Developer",
             "website": "https://www.rakutenmarketing.com/",
             "startDate": "2015-03-04",
@@ -58,7 +58,7 @@
             ]
         },
         {
-            "company": "Vivint",
+            "name": "Vivint",
             "position": "Senior Software Developer",
             "website": "https://www.vivint.com/",
             "startDate": "2013-09-01",
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "company": "Xtrac Solutions",
+            "name": "Xtrac Solutions",
             "position": "Software Developer",
             "website": "http://www.xtracsolutions.com/",
             "startDate": "2012-07-01",
@@ -109,13 +109,13 @@
         {
             "name": "OpenSprints Electron",
             "publisher": "OpenSprints LLC.",
-            "website": "https://github.com/opensprints/opensprints-electron",
+            "url": "https://github.com/opensprints/opensprints-electron",
             "summary": "OpenSprints Multiplatform Roller Racing Event Management Application"
         },
         {
             "name": "nickstew.github.io",
             "publisher": "Nick Stewart",
-            "website": "https://github.com/nickstew/nickstew.github.io",
+            "url": "https://github.com/nickstew/nickstew.github.io",
             "summary": "This website is a static single-page application developed using React.js in pure functional code. It extends the amazing template designed by Xiaoying Riley, ported over to React.js, and uses JSON Resume schema to store a Curriculum Vitae in JSON format."
         }
     ],
