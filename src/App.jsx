@@ -10,7 +10,6 @@ import Github from './Github';
 import BasicInfo from './BasicInfo';
 import SkillSet from './SkillSet';
 import Education from './Education';
-import Resume from "./Types";
 import resume from './resume.json';
 
 const linkedInProfile = find(resume.basic.profiles, (profile) => profile.network === "LinkedIn");

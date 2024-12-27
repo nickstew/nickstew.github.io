@@ -18,7 +18,7 @@ const Education = ({
       <h2 className="heading">Education</h2>
       <div className="content">
         {education.map(college => (
-          <div className="item">
+          <div key={college.institution} className="item">
             <h3 className="title">
               <i className="fa fa-graduation-cap"></i> {college.area}
             </h3>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Testimonials = () => (
   <aside className="testimonials aside section">
     <div className="section-inner">
@@ -25,7 +23,7 @@ const Testimonials = () => (
           </p>
         </div>
         <p>
-          <a className="more-link" href="#">
+          <a className="more-link" href="//linkedin.com/nickstewsoftware">
             <i className="fa fa-external-link"></i> More on Linkedin
           </a>
         </p>

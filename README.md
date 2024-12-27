@@ -1,9 +1,9 @@
-## nickstew.github.io [![Build Status](https://travis-ci.org/nickstew/nickstew.github.io.svg?branch=development)](https://travis-ci.org/nickstew/nickstew.github.io)
+## nickstew.GitHub.io [![Build Status](https://travis-ci.org/nickstew/nickstew.GitHub.io.svg?branch=development)](https://travis-ci.org/nickstew/nickstew.GitHub.io)
 
-**Demo:** http://nickstew.github.io/
+**Demo:** http://nickstew.GitHub.io/
 
 Professional website using React, JSON Resume and the wonderful responsive template project
-[Developer-Theme](https://github.com/xriley/Developer-Theme) by [Xiaoying Riley](https://github.com/xriley).
+[Developer-Theme](https://GitHub.com/xriley/Developer-Theme) by [Xiaoying Riley](https://GitHub.com/xriley).
 
 ## Development Dependencies
 
@@ -11,8 +11,8 @@ Professional website using React, JSON Resume and the wonderful responsive templ
 
 ## Development
 
-Make sure you're working off of the development branch if you're setting this up like I have for my github profile.
-Github Pages is setup so that if this repo is named `<your_username>.github.io` it will use whatever is on your 
+Make sure you're working off of the development branch if you're setting this up like I have for my GitHub profile.
+GitHub Pages is set up so that if this repo is named `<your_username>.github.io` it will use whatever is on your 
 `master` branch as the content for that domain.  Which is why I never manually commit to the `master` branch.
 I either use Travis CI to deploy to do it manually with `npm run deploy`.
 
@@ -24,32 +24,32 @@ I either use Travis CI to deploy to do it manually with `npm run deploy`.
 
 `npm run start`
 
-### Deploying to Github Pages (Option 1: Manual)
+### Deploying to GitHub Pages (Option 1: Manual)
 
 `npm run deploy`
 
-*If this doesn't work and you get an authentication error from Github then you have 2 possible solutions:
+*If this doesn't work, and you get an authentication error from GitHub then you have 2 possible solutions:
 
     1. Install a Git Credential Store and attempt to push a change `git commit -m "testing" && git push"
         - If there is a popup window where you need to authenticate, then it will save some key to your machine to allow all further commands to work.
     2. 
-        - Setup SSH Key for your machine -> [Github Docs](https://help.github.com/articles/connecting-to-github-with-ssh/)
-        - Change remote origin url in this file `.git/config` to be in this format `git@github.com:<username>/<username>.github.io` or the ssh url for your repo
+        - Setup SSH Key for your machine -> [GitHub Docs](https://help.GitHub.com/articles/connecting-to-GitHub-with-ssh/)
+        - Change remote origin url in this file `.git/config` to be in this format `git@GitHub.com:<username>/<username>.GitHub.io` or the ssh url for your repo
  
- ### Deploying to Github Pages (Option 2: Travis CI)
+ ### Deploying to GitHub Pages (Option 2: Travis CI)
  
  In an effort to make this project more accessible to everyone I added the config for Travis CI to this project, but 
  Travis CI requires you to do a small bit of work.
  
  You need to go add a <b>PRIVATE</b> Environment Variable for Travis CI to do the same manual deploy (above) for you.
- Follow these [directions](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to
- generate the token. Then add a <b>PRIVATE</b> Variable in Travis for that repo called `GITHUB_TOKEN` with the token as
+ Follow these [directions](https://help.GitHub.com/articles/creating-a-personal-access-token-for-the-command-line/) to
+ generate the token. Then add a <b>PRIVATE</b> Variable in Travis for that repo called `GitHub_TOKEN` with the token as
  the value.
- Every time you push changes, Travis will take care of the deployment.  Thanks Travis!
+ Every time you push changes, Travis will take care of the deployment.  Thanks, Travis!
  
 #### Notes
 
-If you run into anything strange and have done at least a google search on it, <b>please</b> let me know.
+If you run into anything strange and have done at least a Google search on it, <b>please</b> let me know.
 
 I built this project to showcase my skills and want it to help others do the same. :heart:
 
@@ -64,11 +64,11 @@ I love you all.
 You give me hope, when mine's all used up.
 
 - [Bootstrap](http://getbootstrap.com/)
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
+- [FontAwesome](http://fortawesome.GitHub.io/Font-Awesome/)
 - [jQuery](http://jquery.com/)
-- [GitHub Activity Stream](http://caseyscarborough.com/projects/github-activity/)
-- [GitHub Calendar Plugin](https://github.com/IonicaBizau/github-calendar)
-- [React](https://facebook.github.io/react/)
-- [Create React App](https://github.com/facebookincubator/create-react-app)
+- [GitHub Activity Stream](http://caseyscarborough.com/projects/GitHub-activity/)
+- [GitHub Calendar Plugin](https://GitHub.com/IonicaBizau/GitHub-calendar)
+- [React](https://facebook.GitHub.io/react/)
+- [Create React App](https://GitHub.com/facebookincubator/create-react-app)
 - [JSON Resume](https://jsonresume.org)
-- [Developer-Theme](https://github.com/xriley/Developer-Theme)
+- [Developer-Theme](https://GitHub.com/xriley/Developer-Theme)
